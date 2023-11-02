@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-
-
-
 body{
     margin: 0px;
     padding: 0px;
@@ -19,89 +16,44 @@ body{
     background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
 }
 
-
 button{
     cursor: pointer;
-
 }
-
-
-
-
-
 
 h1{
-    font: size 3em;
+ position:relative;
+ left: -250px;
+   
+}
+#zone_meteo{
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 10px #000;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 60vh;
+    transform: translate(-50% -50%);
+    padding: 5%;
+   
 }
 
-
-
 main{
-    width: 50%;
-    height: 200px;
+    width: 100%;
+    max-width: 600px;
+    height: 40vh;
     background-color:#fff;
     display: flex;
     padding-left: 2%;
     align-items: center;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #000;
-    gap: 5%;
-
+    gap: 2%;
 }
 
 input{
-    width: 30%;
+    width: 200%;
+    max-width: 200px;
     font-family: 'Poppins', sans-serif;
 }
-/* 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
-body{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    background: #2980B9;
-    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-}
-
-
-button{
-    cursor: pointer;
-
-}
-
-
-
-
-
-h1{
-    font-size: ;
-}
-
-
-
-main{
-    width: 50%;
-    height: 200px;
-    background-color:#fff;
-    display: flex;
-    padding-left: 2%;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #000;
-    gap: 5%;
-
-}
-
-input{
-    width: 30%;
-    font-family: 'Poppins', sans-serif;
-} */
