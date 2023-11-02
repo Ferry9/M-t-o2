@@ -13,9 +13,19 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
     font-family: 'Poppins', sans-serif;
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
 }
+
+
+
+
+
+
+
+
 
 h1{
     font-size: ;
