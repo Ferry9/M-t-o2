@@ -38,6 +38,15 @@ h1{
     padding: 5%;
    
 }
+#image{
+    width: auto;
+    background-color:#fff;
+    transform: translate(-50% -50%);
+    box-shadow: 5px 5px 10px #000;
+    margin-top: 20px;
+    position: relative;
+    right: 10%;
+}
 
 main{
     width: 100%;
