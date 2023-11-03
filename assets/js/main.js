@@ -11,12 +11,12 @@ function enterKeyUp() {
 // Fonction qui est appelée lorsque le bouton de recherche de météo est cliqué
 function buttonClickGET() {
     // Récupère la valeur de l'input avec l'ID "text" (nom de la ville)
-    const ville = document.getElementById("text").value;
+    const valeur_saisie = document.getElementById("text").value;
+
 
     
-    
     // Construit l'URL de l'API en utilisant la valeur de l'input
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + ville + "&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + valeur_saisie + "&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric";
     
     // Utilise jQuery pour envoyer une requête GET à l'URL de l'API
     $.get(url, callBackGetSuccess).done(function() {
@@ -24,13 +24,13 @@ function buttonClickGET() {
     })
 
     .fail(function() {
-        alert( "erreur" );
+        alert( "Ce nom n'existe pas dans notre base de donnée..." );
     })
 
     .always(function() {
         //alert( "finished" );
     });
-} // Fin
+} // Fin de la fonction d'envois de la requêt http par le canal de jQuery...
 
 
 
