@@ -1,3 +1,11 @@
+// Fonction pour vérifier si la touche "Entrée" a été enfoncée
+function enterKeyUp() {
+    // Si la touche "Entrée" a été enfoncée, lance la recherche
+    if (event.keyCode === 13) {
+        buttonClickGET();
+    }
+}
+
 // Fonction qui est appelée lorsque le bouton de recherche de météo est cliqué
 function buttonClickGET() {
     // Récupère la valeur de l'input avec l'ID "text" (nom de la ville)
@@ -5,8 +13,6 @@ function buttonClickGET() {
     
     // Construit l'URL de l'API en utilisant la valeur de l'input
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + ville + "&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric";
-    
-
     
     // Utilise jQuery pour envoyer une requête GET à l'URL de l'API
     $.get(url, callBackGetSuccess).done(function() {
@@ -37,3 +43,12 @@ function callBackGetSuccess(data) {
     "La pression est de : " + data.main.pressure + "hPa" + "<br>" +
     "Le vent souffle à : " + data.wind.speed + "m/s";
 }
+
+// Fonction principale qui est exécutée lors du chargement de la page
+function main() {
+    // Ajoute un écouteur d'événements pour détecter lorsqu'une touche est enfoncée
+    document.getElementById("text").addEventListener("keyup", enterKeyUp);
+}
+
+// Exécute la fonction principale
+main();
