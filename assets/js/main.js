@@ -63,6 +63,7 @@ function callBackGetSuccess(data) {
     // Ajoute la balise <img> à la fin du contenu HTML
     element2.insertAdjacentHTML('beforeend', "<img src='" + imgSrc + "' alt='" + data.weather[0].description + "'>");
     // Fin de l'ajout d'images météo synchronisée fonction du temps qu'il fait...
+    
 }  // Fin de la fonction de rappel...
 
 
