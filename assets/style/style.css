@@ -19,6 +19,19 @@ body{
 button{
     cursor: pointer;
 }
+.class_meteo{
+    width: 219px;
+    height: 123px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    position: absolute;
+    width: 219px;
+    top: 261px;
+    left: 1080px;
+
+
+}
 
 h1{
  position:relative;
@@ -66,3 +79,23 @@ input{
     max-width: 200px;
     font-family: 'Poppins', sans-serif;
 }
+
+
+
+
+
+@media (max-width: 768px) {
+    /* règles CSS pour les téléphones */
+  }
+
+
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* règles CSS pour les tablettes */
+  }
+
+
+
+  @media (min-width: 1024px) {
+    /* règles CSS pour les ordinateurs */
+  }
