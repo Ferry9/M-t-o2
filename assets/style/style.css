@@ -25,7 +25,7 @@ button{
 
 h1{
  position:relative;
- left: -250px;
+ left: -210px;
    
 }
 #zone_meteo{
@@ -35,7 +35,7 @@ h1{
     box-shadow: 5px 5px 10px #000;
     margin-top: 20px;
     border-radius: 10px;
-    width: 200px;
+    width: 255px;
     height: 60vh;
     transform: translate(-50% -50%);
     padding: 5%;
@@ -71,37 +71,68 @@ input{
 }
 
 
-
+/* Média querie téléphone */
 
 
 @media (max-width: 768px) {
-        h1{
-          
-
+        #zone_meteo{
+            position: absolute;
+            top: 90%; width: 300px;
+            height: 164px;
+            width: 300px;
+            margin: 0 auto;
+            border-radius: 10px;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
         }
         main{
-        
+            width: 245px;
+            height: 165px;
+            flex-shrink: 0;
+            position: relative;
+            bottom: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+
+        }
+
+        h1{
+           position: relative;
+           bottom: 180px; 
+           left: 0;
+        }
+
+        #zone_meteo{
+            position: absolute;
+            top: 300px;
+            transform: translate(-50%, -50%);
+
         }
 
         body{
             display: flex;
-            justify-content: center;
             flex-direction: column;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        #zone_meteo{
-         
-
-        }
-
-
-
-        body{
-            width: 375px;
-            height: 667px;
             
         }
+        #text{
+            width: 207px;
+            
+        }
+        #container{
+            position: absolute;
+            /* bottom: -2px; */
+            margin-top: 90px;
+            width: 112px;
+           
+
+
+        }
+
+       
   }
 
 
