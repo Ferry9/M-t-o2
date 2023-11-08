@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+
+.container {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#compteur {
+    font-size: 30px;
+    color: #333;
+
+   
+}
+
+h2 #compteur{
+    font-family: poppin;
+}
+
+
+
 body{
     margin: 0px;
     padding: 0px;
@@ -14,7 +37,12 @@ body{
     background: #2980B9;
     background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
     background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    
 }
+
+
+
+  
 
 
 

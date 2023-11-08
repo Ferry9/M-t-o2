@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-   
     <title>Tuto Meteo</title>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <title>APP - Météo - Ferry</title>
   </head>
   <body>
+    <!-- compteur qui tourne en boucle -->
+    <div class="container">
+      <h1 id="compteur"></h1>
+    </div>
 
     <h1>METEO</h1>
 
-   
-
-
     <main>
-
-      
       <!-- reuqette de l'utilisateur -->
       <input type="text" id="text" placeholder="Quel est votre région ?" />
 
@@ -25,12 +24,9 @@
       </button>
 
       <!-- Zonne ou sera affiché les données récoltées -->
-     <div id="zone_meteo"></div>
 
+      <div id="zone_meteo"></div>
     </main>
-
-     
-
 
     <script src="./assets/js/main.js"></script>
   </body>
