@@ -1,31 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 .container {
-   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#compteur {
+  font-size: 30px;
+  color: #333;
+  padding-top: 30px;
+}
+
+h2 #compteur {
+  font-family: poppin;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: #2980b9;
+  background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  position: relative;
+  left: -210px;
+}
+#zone_meteo {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 10px #000;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 255px;
+  height: 60vh;
+  transform: translate(-50% -50%);
+  padding: 5%;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+  height: 40vh;
+  background-color: #fff;
+  display: flex;
+  padding-left: 2%;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #000;
+  gap: 2%;
+}
+
+input {
+  width: 200%;
+  max-width: 200px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Média querie téléphone */
+
+@media (max-width: 768px) {
+  #zone_meteo {
+    position: absolute;
+    top: 90%;
+    height: 164px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main {
+    width: 245px;
+    height: 165px;
+    flex-shrink: 0;
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    position: relative;
+    bottom: 180px;
+    left: 0;
+  }
+
+  #zone_meteo {
+    position: absolute;
+    top: 300px;
+    transform: translate(-50%, -50%);
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  #text {
+    width: 207px;
+  }
+  #container {
+    position: absolute;
+    /* bottom: -2px; */
+    margin-top: 90px;
+    width: 112px;
+  }
+
+  #compteur {
+    font-size: 25px;
+    color: #333;
+    padding-top: 30px;
+  }
+}
+
+/* écran 320 */
+@media (max-width: 320px) {
+  #zone_meteo {
+    height: 148px;
+    width: 250px;
+    border-radius: 10px;
+    /* overflow: auto; */
+    margin-top: 10px;
+  }
+  main {
+    width: 245px;
+    height: 120px;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    position: relative;
+    bottom: 140px;
+    left: 0;
+  }
+
+  #zone_meteo {
+    position: absolute;
+    top: 170%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  #text {
+    width: 207px;
+    margin-bottom: 45px;
+  }
+  button {
+    margin-bottom: 45px;
+  }
+
+  #container {
+    position: absolute;
+    /* bottom: -2px; */
+    width: 112px;
+  }
+
+  #compteur {
+    font-size: 20px;
+    color: #333;
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
 
-   
-}
-
-#compteur {
+  #compteur {
     font-size: 30px;
     color: #333;
     padding-top: 30px;
+  }
 
-   
-}
-
-h2 #compteur{
+  h2 #compteur {
     font-family: poppin;
-}
+  }
 
-
-
-body{
+  body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -35,32 +214,96 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
-    background: #2980B9;
-    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-    
-}
+    font-family: "Poppins", sans-serif;
+    background: #2980b9;
+    background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+    background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  }
 
-
-
-  
-
-
-
-
-button{
+  button {
     cursor: pointer;
-}
+  }
 
-h1{
- position:relative;
- left: -210px;
-   
-}
-#zone_meteo{
-    background-color:#fff;
+  h1 {
+    position: relative;
+    left: -210px;
+  }
+  #zone_meteo {
+    background-color: #fff;
     display: flex;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #compteur {
+      font-size: 30px;
+      color: #333;
+      padding-top: 30px;
+    }
+
+    h2 #compteur {
+      font-family: poppin;
+    }
+
+    body {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      background: #2980b9;
+      background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+      background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    h1 {
+      position: relative;
+      left: -210px;
+    }
+    #zone_meteo {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      box-shadow: 5px 5px 10px #000;
+      margin-top: 20px;
+      border-radius: 10px;
+      width: 255px;
+      height: 427px;
+
+      transform: translate(-50% -50%);
+      padding: 5%;
+    }
+
+    main {
+      background-color: #fff;
+      display: flex;
+      width: 384px;
+      height: 244px;
+      padding-left: 2%;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px #000;
+      gap: 2%;
+    }
+
+    input {
+      width: 200%;
+      max-width: 200px;
+      font-family: "Poppins", sans-serif;
+    }
+
     align-items: center;
     box-shadow: 5px 5px 10px #000;
     margin-top: 20px;
@@ -69,268 +312,47 @@ h1{
     height: 60vh;
     transform: translate(-50% -50%);
     padding: 5%;
-   
-}
-#image{
-    width: auto;
-    background-color:#fff;
-    transform: translate(-50% -50%);
-    box-shadow: 5px 5px 10px #000;
-    margin-top: 20px;
-    position: relative;
-    right: 10%;
-}
+  }
 
-main{
+  main {
     width: 100%;
     max-width: 600px;
     height: 40vh;
-    background-color:#fff;
+    background-color: #fff;
     display: flex;
     padding-left: 2%;
     align-items: center;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #000;
     gap: 2%;
-}
-
-input{
-    width: 200%;
-    max-width: 200px;
-    font-family: 'Poppins', sans-serif;
-}
-
-
-/* Média querie téléphone */
-
-
-@media (max-width: 768px) {
-        #zone_meteo{
-            position: absolute;
-            top: 90%; 
-            height: 164px;
-            width: 300px;
-            margin: 0 auto;
-            border-radius: 10px;
-            top: 85%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            
-        }
-        main{
-            width: 245px;
-            height: 165px;
-            flex-shrink: 0;
-            position: relative;
-            bottom: 150px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            
-
-        }
-
-        h1{
-           position: relative;
-           bottom: 180px; 
-           left: 0;
-        }
-
-        #zone_meteo{
-            position: absolute;
-            top: 300px;
-            transform: translate(-50%, -50%);
-
-        }
-
-        body{
-            display: flex;
-            flex-direction: column;
-            
-        }
-        #text{
-            width: 207px;
-            
-        }
-        #container{
-            position: absolute;
-            /* bottom: -2px; */
-            margin-top: 90px;
-            width: 112px;
-           
-
-
-        }
-
-        #compteur {
-            font-size: 25px;
-            color: #333;
-            padding-top: 30px;
-        
-           
-        }
-
-       
   }
 
-  /* écran 320 */
-  @media (max-width: 320px) {
-    #zone_meteo{
-       
-        height: 148px;
-        width: 250px;
-        border-radius: 10px;
-        /* overflow: auto; */
-        margin-top: 10px;
-        
-        
-    }
-    main{
-        width: 245px;
-        height: 120px;
-        flex-shrink: 0;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-
-    }
-
-    h1{
-       position: relative;
-       bottom: 140px; 
-       left: 0;
-    }
-
-    #zone_meteo{
-        position: absolute;
-        top: 170%;
-    }
-
-    body{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    #text{
-        width: 207px;
-        margin-bottom: 45px;
-        
-    }
-    button{
-        margin-bottom: 45px;
-    }
-    
-    #container{
-        position: absolute;
-        /* bottom: -2px; */
-        width: 112px;
-       
-
-
-    }
-
-    #compteur {
-        font-size: 20px;
-        color: #333;
-        padding-top: 120px;
-    
-       
-    }
-
-   
+  input {
+    width: 200%;
+    max-width: 200px;
+    font-family: "Poppins", sans-serif;
+  }
 }
 
-
-
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .container {
-   
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
-       
-    }
-    
-    #compteur {
-        font-size: 30px;
-        color: #333;
-        padding-top: 30px;
-    
-       
-    }
-    
-    h2 #compteur{
-        font-family: poppin;
-    }
-    
-    
-    
-    body{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        min-height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Poppins', sans-serif;
-        background: #2980B9;
-        background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-        background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-        
-    }
-    
-    
-    
-      
-    
-    
-    
-    
-    button{
-        cursor: pointer;
-    }
-    
-    h1{
-     position:relative;
-     left: -210px;
-       
-    }
-    #zone_meteo{
-        background-color:#fff;
-        display: flex;
-        .container {
-   
+@media (width: 1114px) {
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
 
-   
-}
-
-#compteur {
+  #compteur {
     font-size: 30px;
     color: #333;
     padding-top: 30px;
+  }
 
-   
-}
-
-h2 #compteur{
+  h2 #compteur {
     font-family: poppin;
-}
+  }
 
-
-
-body{
+  body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -340,106 +362,127 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
-    background: #2980B9;
-    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-    
-}
+    font-family: "Poppins", sans-serif;
+    background: #2980b9;
+    background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+    background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  }
 
-
-
-  
-
-
-
-
-button{
+  button {
     cursor: pointer;
-}
+  }
 
-h1{
- position:relative;
- left: -210px;
-   
-}
-#zone_meteo{
-    background-color:#fff;
+  h1 {
+    position: relative;
+    left: -210px;
+  }
+  #zone_meteo {
+    background-color: #fff;
     display: flex;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: red;
+    }
+
+    #compteur {
+      font-size: 30px;
+      color: #333;
+      padding-top: 30px;
+    }
+
+    h2 #compteur {
+      font-family: poppin;
+    }
+
+    body {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      background: #2980b9;
+      background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+      background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    h1 {
+      position: relative;
+      left: -210px;
+    }
+    #zone_meteo {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      box-shadow: 5px 5px 10px #000;
+      margin-top: 20px;
+      border-radius: 10px;
+      width: 255px;
+      height: 427px;
+
+      transform: translate(-50% -50%);
+      padding: 5%;
+    }
+
+    main {
+      background-color: #fff;
+      display: flex;
+      width: 384px;
+      height: 244px;
+      padding-left: 2%;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px #000;
+      gap: 2%;
+    }
+
+    input {
+      width: 200%;
+      max-width: 200px;
+      font-family: "Poppins", sans-serif;
+    }
+
     align-items: center;
     box-shadow: 5px 5px 10px #000;
     margin-top: 20px;
     border-radius: 10px;
     width: 255px;
-    height: 427px;
-    
+    height: 60vh;
     transform: translate(-50% -50%);
     padding: 5%;
-   
-}
+  }
 
-
-main{
-    background-color:#fff;
+  main {
+    width: 100%;
+    max-width: 600px;
+    height: 40vh;
+    background-color: #fff;
     display: flex;
-    width: 384px;
-    height: 244px;
     padding-left: 2%;
     align-items: center;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #000;
     gap: 2%;
-}
+  }
 
-input{
+  input {
     width: 200%;
     max-width: 200px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
+  }
 }
 
-        align-items: center;
-        box-shadow: 5px 5px 10px #000;
-        margin-top: 20px;
-        border-radius: 10px;
-        width: 255px;
-        height: 60vh;
-        transform: translate(-50% -50%);
-        padding: 5%;
-       
-    }
-    #image{
-        width: auto;
-        background-color:#fff;
-        transform: translate(-50% -50%);
-        box-shadow: 5px 5px 10px #000;
-        margin-top: 20px;
-        position: relative;
-        right: 10%;
-    }
-    
-    main{
-        width: 100%;
-        max-width: 600px;
-        height: 40vh;
-        background-color:#fff;
-        display: flex;
-        padding-left: 2%;
-        align-items: center;
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px #000;
-        gap: 2%;
-    }
-    
-    input{
-        width: 200%;
-        max-width: 200px;
-        font-family: 'Poppins', sans-serif;
-    }
-    
-  }
-
-
-
-  @media (min-width: 1024px) {
-    /* règles CSS pour les ordinateurs */
-  }
+@media (min-width: 1024px) {
+  /* règles CSS pour les ordinateurs */
+}
