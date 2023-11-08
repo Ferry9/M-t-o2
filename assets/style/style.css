@@ -246,7 +246,196 @@ input{
 
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    /* règles CSS pour les tablettes */
+    .container {
+   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+       
+    }
+    
+    #compteur {
+        font-size: 30px;
+        color: #333;
+        padding-top: 30px;
+    
+       
+    }
+    
+    h2 #compteur{
+        font-family: poppin;
+    }
+    
+    
+    
+    body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        background: #2980B9;
+        background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+        background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+        
+    }
+    
+    
+    
+      
+    
+    
+    
+    
+    button{
+        cursor: pointer;
+    }
+    
+    h1{
+     position:relative;
+     left: -210px;
+       
+    }
+    #zone_meteo{
+        background-color:#fff;
+        display: flex;
+        .container {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+#compteur {
+    font-size: 30px;
+    color: #333;
+    padding-top: 30px;
+
+   
+}
+
+h2 #compteur{
+    font-family: poppin;
+}
+
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    
+}
+
+
+
+  
+
+
+
+
+button{
+    cursor: pointer;
+}
+
+h1{
+ position:relative;
+ left: -210px;
+   
+}
+#zone_meteo{
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 10px #000;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 255px;
+    height: 427px;
+    
+    transform: translate(-50% -50%);
+    padding: 5%;
+   
+}
+
+
+main{
+    background-color:#fff;
+    display: flex;
+    width: 384px;
+    height: 244px;
+    padding-left: 2%;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #000;
+    gap: 2%;
+}
+
+input{
+    width: 200%;
+    max-width: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+        align-items: center;
+        box-shadow: 5px 5px 10px #000;
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 255px;
+        height: 60vh;
+        transform: translate(-50% -50%);
+        padding: 5%;
+       
+    }
+    #image{
+        width: auto;
+        background-color:#fff;
+        transform: translate(-50% -50%);
+        box-shadow: 5px 5px 10px #000;
+        margin-top: 20px;
+        position: relative;
+        right: 10%;
+    }
+    
+    main{
+        width: 100%;
+        max-width: 600px;
+        height: 40vh;
+        background-color:#fff;
+        display: flex;
+        padding-left: 2%;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #000;
+        gap: 2%;
+    }
+    
+    input{
+        width: 200%;
+        max-width: 200px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
   }
 
 
