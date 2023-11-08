@@ -7,12 +7,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
    
 }
 
 #compteur {
     font-size: 30px;
     color: #333;
+    padding-top: 30px;
 
    
 }
@@ -160,8 +162,86 @@ input{
 
         }
 
+        #compteur {
+            font-size: 25px;
+            color: #333;
+            padding-top: 30px;
+        
+           
+        }
+
        
   }
+
+  /* écran 320 */
+  @media (max-width: 320px) {
+    #zone_meteo{
+        position: absolute;
+        top: 90%; width: 300px;
+        height: 164px;
+        width: 300px;
+        margin: 0 auto;
+        border-radius: 10px;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    main{
+        width: 245px;
+        height: 165px;
+        flex-shrink: 0;
+        position: relative;
+        bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+    }
+
+    h1{
+       position: relative;
+       bottom: 140px; 
+       left: 0;
+    }
+
+    #zone_meteo{
+        position: absolute;
+        top: 300px;
+        transform: translate(-50%, -50%);
+
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #text{
+        width: 207px;
+        
+    }
+    #container{
+        position: absolute;
+        /* bottom: -2px; */
+        width: 112px;
+       
+
+
+    }
+
+    #compteur {
+        font-size: 20px;
+        color: #333;
+        padding-top: 150px;
+    
+       
+    }
+
+   
+}
+
 
 
 

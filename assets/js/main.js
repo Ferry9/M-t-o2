@@ -60,24 +60,19 @@ container.addEventListener("click", () => {
     });
 });
 
-
-
-
-
-
-
-let compteur = document.getElementById('compteur');
+// Déclaration des variables pour le compteur
+let compteur = document.getElementById("compteur");
 let bienvenue = "Bienvenu sur Appli Météo ...";
 let index = 0;
 
 function animerCompteur() {
-    if (index < bienvenue.length) {
-        compteur.textContent += bienvenue.charAt(index);
-        index++;
-    } else {
-        index = 0;
-        compteur.textContent = "";
-    }
+  if (index < bienvenue.length) {
+    compteur.textContent += bienvenue.charAt(index);
+    index++;
+  } else {
+    index = 0;
+    compteur.textContent = "";
+  }
 }
 
 setInterval(animerCompteur, 300); // Vitesse d'animation du compteur
